@@ -1,6 +1,6 @@
-![hehe](erectenginelogo.png)
-# Friday Night Funkin' - Erect Engine - Modded OS Engine
-![](https://img.shields.io/github/license/Magniill/FNF-ErectEngine) ![GitHub all releases](https://img.shields.io/github/downloads/Magniill/FNF-ErectEngine/total)
+![](https://media.discordapp.net/attachments/969211146412363828/980124443164672000/23336ff517a80f27.png?width=1101&height=701)
+# Friday Night Funkin' - OS Engine - Modded Psych Engine 
+![](https://img.shields.io/github/issues/notweuz/FNF-OSEngine) ![](https://img.shields.io/github/forks/notweuz/FNF-OSEngine) ![](https://img.shields.io/github/stars/notweuz/FNF-OSEngine) ![](https://img.shields.io/github/license/notweuz/FNF-OSEngine) ![GitHub all releases](https://img.shields.io/github/downloads/notweuz/FNF-OSEngine/total) ![GitHub repo size](https://img.shields.io/github/repo-size/notweuz/FNF-OSEngine) ![](https://img.shields.io/github/contributors/notweuz/FNF-OSEngine) ![GitHub release (latest by date)](https://img.shields.io/github/downloads/notweuz/FNF-OSEngine/latest/total)
 
 ## Installation:
 You must have [the most up-to-date version of Haxe](https://haxe.org/download/), seriously, stop using 4.1.5, it misses some stuff.
@@ -14,14 +14,6 @@ To install LuaJIT do this: `haxelib git linc_luajit https://github.com/nebulazor
 If you get an error about StatePointer when using Lua, run `haxelib remove linc_luajit` into Command Prompt/PowerShell, then re-install linc_luajit.
 
 If you want video support on your mod, simply do `haxelib install hxCodec` on a Command prompt/PowerShell
-
-## Erect Engine Credits:
-* [NotMagniill](https://twitter.com/magniill) - Main Programmer/Artist
-* [BruhDaDumbass](https://twitter.com/bruh_thedumbass) - Additional Programmer
-* [HeartinaRosebud](https://twitter.com/HeartinaRosebud) - Main Artist/Main Animator
-
-### Erect Engine Special Thanks:
-* [NotDreepyMV](https://www.youtube.com/channel/UCi32t97MCZr585ItbmlzCZA) - Playtester
 
 ## OS Engine Credits:
 * [weuz_](https://github.com/notweuz) - Coding
@@ -104,7 +96,7 @@ Now you can press ESC at title state. And game will ask you do you want to close
 ### Winning icons 
 Instead of 2 icons, there'll be three icons (losing, normal, winning). And yes, you can use double icons (without winning).
 
-![](https://github.com/Magniill/FNF-ErectEngine/blob/main/assets/preload/images/icons/icon-bf.png?raw=true)
+![](https://github.com/weuz-github/FNF-OSEngine/blob/main/assets/preload/images/icons/icon-bf.png?raw=true)
 
 *thanks Cooljer for remaking original fnf icons*
 
@@ -120,31 +112,3 @@ Bit changed Title State. Now it looks way more better.
 Cassette Girl vibes?
 
 ![](https://media.discordapp.net/attachments/969211146412363828/969218236950397038/unknown.png)
-
-- - -
-## Erect Engine Features
-
-### Extra Keys Event
-Extra Keys now is available in the Events Section of the charting mode
-
-![](updates/extrakeys.png)
-
-### Shaders on Thorns
-Perfection
-
-![](updates/shaderonthorns.jpg)
-
-### Now Playing Song Name
-Just to know what you're playing, well it's pretty useless tough
-
-![](updates/nowplaying.png)
-
-### Tilting Logo
-Kade Engine vibes?
-
-![](updates/thelogothatsalwaysmoving.png)
-
-### A bunch of version text
-Completely nothing to say
-
-![](updates/abunchoftext.png)
