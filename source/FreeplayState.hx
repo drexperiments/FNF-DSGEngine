@@ -61,7 +61,7 @@ class FreeplayState extends MusicBeatState
 
 		#if desktop
 		// Updating Discord Rich Presence
-		DiscordClient.changePresence("In the Menus", null);
+		DiscordClient.changePresence("Choosing a song", null);
 		#end
 
 		for (i in 0...WeekData.weeksList.length) {
@@ -112,6 +112,7 @@ class FreeplayState extends MusicBeatState
 		for (i in 0...songs.length)
 		{
 			var songText:Alphabet = new Alphabet(0, (70 * i) + 30, songs[i].songName, true, false);
+			songText.isMenuItemCenter = true;
 			songText.isMenuItem = true;
 			songText.targetY = i;
 			grpSongs.add(songText);

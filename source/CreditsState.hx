@@ -41,7 +41,7 @@ class CreditsState extends MusicBeatState
 	{
 		#if desktop
 		// Updating Discord Rich Presence
-		DiscordClient.changePresence("In the Menus", null);
+		DiscordClient.changePresence("In the Credits", null);
 		#end
 
 		persistentUpdate = true;
@@ -85,11 +85,19 @@ class CreditsState extends MusicBeatState
 		}
 		#end
 
-		var pisspoop:Array<Array<String>> = [ //Name - Icon name - Description - Link - BG Color
+		var pisspoop:Array<Array<String>> = [ //Name - Icon name - Description - Link - BG Color // too much code, help
+			['Erect Engine Team'],
+			['NotMagniill',			'charliev2',		'Main Programmer/Artist of Plus Engine',						'https://twitter.com/magniill',			'01B0FD'],
+			['Bruh The Dumbass',	'bruh',				'Additional Programmer of Plus Engine',							'https://twitter.com/bruh_thedumbass',	'FFFFFF'],
+			['HeartinaRosebud',		'hearts',			'Main Artist/Main Animator of Plus Engine',						'https://twitter.com/HeartinaRosebud',	'FF80C0'],
+			[''],
+			['Special Thanks'],
+			['NotDreepyMV',			'dreepy',			'Playtester of Plus Engine',									'https://www.youtube.com/channel/UCi32t97MCZr585ItbmlzCZA/featured',	'638177'],
+			[''],
 			['OS Engine Team'],
-			['notweuz_', 'weuz', 'Main Programmer of OS Engine', 'https://twitter.com/notweuz_', '8633F2'],
-			['nelifs', 'nelifs', 'Second Programmer and Designer of OS Engine', 'https://github.com/nelifs', '1C1C1C'],
-			['Cooljer', 'cooljer', 'Main Artist of OS Engine', 'https://twitter.com/cooljer_', '3360F2'],
+			['notweuz_', 			'weuz', 			'Main Programmer of OS Engine', 								'https://twitter.com/notweuz_', 		'8633F2'],
+			['nelifs', 				'nelifs', 			'Second Programmer and Designer of OS Engine', 					'https://github.com/nelifs', 			'1C1C1C'],
+			['Cooljer', 			'cooljer', 			'Main Artist of OS Engine', 									'https://twitter.com/cooljer_', 		'3360F2'],
 			[''],
 			['Psych Engine Team'],
 			['Shadow Mario',		'shadowmario',		'Main Programmer of Psych Engine',								'https://twitter.com/Shadow_Mario_',	'444444'],
@@ -99,7 +107,7 @@ class CreditsState extends MusicBeatState
 			['Former Engine Members'],
 			['bb-panzu',			'bb',				'Ex-Programmer of Psych Engine',								'https://twitter.com/bbsub3',			'3E813A'],
 			[''],
-			['Engine Contributors'],
+			['Psych Engine Contributors'],
 			['iFlicky',				'flicky',			'Composer of Psync and Tea Time\nMade the Dialogue Sounds',		'https://twitter.com/flicky_i',			'9E29CF'],
 			['SqirraRNG',			'sqirra',			'Crash Handler and Base code for\nChart Editor\'s Waveform',	'https://twitter.com/gedehari',			'E1843A'],
 			['PolybiusProxy',		'proxy',			'.MP4 Video Loader Library (hxCodec)',							'https://twitter.com/polybiusproxy',	'DCD294'],
@@ -108,12 +116,32 @@ class CreditsState extends MusicBeatState
 			['Nebula the Zorua',	'nebula',			'LUA JIT Fork and some Lua reworks',							'https://twitter.com/Nebula_Zorua',		'7D40B2'],
 			['Smokey',				'smokey',			'Sprite Atlas Support',											'https://twitter.com/Smokey_5_',		'483D92'],
 			[''],
+			['Modding Plus Team'],
+			['bulbyVR',				'bulb',				'Owner/Programmer',												'https://github.com/TheDrawingCoder-Gamer',	'FFB100'],
+			['DJ Popsicle',			'popsicle',			'Co-Owner\nAdditional Programmer',								'https://gamebanana.com/members/1780306',	'FFFF05'],
+			['Mlops',				'lazytodraw',		'Artist/Animator',												'https://gamebanana.com/members/1767306',	'FFEF00'],
+			['AndreDoodles',		'lazytodraw',		'Artist/Animator',												'https://gamebanana.com/members/1764840',	'FFEF00'],
+			['plum',				'lazytodraw',		'Artist/Animator',												'https://www.youtube.com/channel/UCXbiI4MJD9Y3FpjW61lG8ZQ',	'FFEF00'],
+			['Kade Engine Team'],
+			['KadeDev',				'kade',				'Owner',														'https://twitter.com/kade0912',			'64A250'],
+			['The Contributors',	'lazytodraw',		'as it says',													'https://github.com/KadeDev/Kade-Engine/graphs/contributors',	'FFEF00'],
 			["Funkin' Crew"],
 			['ninjamuffin99',		'ninjamuffin99',	"Programmer of Friday Night Funkin'",							'https://twitter.com/ninja_muffin99',	'CF2D2D'],
 			['PhantomArcade',		'phantomarcade',	"Animator of Friday Night Funkin'",								'https://twitter.com/PhantomArcade3K',	'FADC45'],
 			['evilsk8r',			'evilsk8r',			"Artist of Friday Night Funkin'",								'https://twitter.com/evilsk8r',			'5ABD4B'],
 			['kawaisprite',			'kawaisprite',		"Composer of Friday Night Funkin'",								'https://twitter.com/kawaisprite',		'378FC7']
 		];
+
+		// FOR THE MODDING PLUS STUFF, IDK WHY I PUT IT HERE BUT WHATEVER
+		// DONT EDIT THIS TOO!!!!!
+		//- [BulbyVR](https://github.com/TheDrawingCoder-Gamer) - Owner/Programmer
+		//- [DJ Popsicle](https://gamebanana.com/members/1780306) - Co-Owner/Additional Programmer
+		//- [Matheus L/Mlops](https://gamebanana.com/members/1767306), [AndreDoodles](https://gamebanana.com/members/1764840), riko, Raf, ElBartSinsoJaJa, and [plum](https://www.youtube.com/channel/UCXbiI4MJD9Y3FpjW61lG8ZQ) - Artist & Animation
+		//- [ThePinkPhantom/JuliettePink](https://gamebanana.com/members/1892442) - Portrait Artist
+		//- [Alex Director](https://gamebanana.com/members/1701629) - Icon Fixer
+		//- [Drippy](https://github.com/TrafficKid) - GitHub Wikipedia
+		//- [GwebDev](https://github.com/GrowtopiaFli) - Edited WebM code
+		//- [Axy](https://github.com/timeless13GH) - Poggers help
 		
 		for(i in pisspoop){
 			creditsStuff.push(i);
@@ -184,7 +212,7 @@ class CreditsState extends MusicBeatState
 		}
 		
 		if (FlxG.keys.pressed.CONTROL) {
-			CoolUtil.browserLoad('https://discord.gg/5vEHTRjNck');
+			CoolUtil.browserLoad('https://discord.gg/afyFXjz9Gy');
 		}
 
 		if(!quitting)

@@ -65,6 +65,7 @@ class TitleState extends MusicBeatState
 	var credTextShit:Alphabet;
 	var textGroup:FlxGroup;
 	var ngSpr:FlxSprite;
+	var erectSpr:FlxSprite;
 	
 	var titleTextColors:Array<FlxColor> = [0xFF33FFFF, 0xFF3333CC];
 	var titleTextAlphas:Array<Float> = [1, .64];
@@ -75,7 +76,7 @@ class TitleState extends MusicBeatState
 
 	#if TITLE_SCREEN_EASTER_EGG
 	var easterEggKeys:Array<String> = [
-		'SHADOW', 'RIVER', 'SHUBS', 'BBPANZU'
+		'SHADOW', 'RIVER', 'SHUBS', 'BBPANZU', 'MAGNIILL'
 	];
 	var allowedKeys:String = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
 	var easterEggKeysBuffer:String = '';
@@ -179,6 +180,9 @@ class TitleState extends MusicBeatState
 			case 'BBPANZU':
 				titleJSON.gfx += 45;
 				titleJSON.gfy += 100;
+			case 'MAGNIILL':
+				titleJSON.gfx += 2908;
+				titleJSON.gfy += 1992;
 		}
 		#end
 
@@ -314,6 +318,10 @@ class TitleState extends MusicBeatState
 				gfDance.frames = Paths.getSparrowAtlas('BBBump');
 				gfDance.animation.addByIndices('danceLeft', 'BB Title Bump', [14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27], "", 24, false);
 				gfDance.animation.addByIndices('danceRight', 'BB Title Bump', [27, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13], "", 24, false);
+			case 'MAGNIILL'
+				gfDance.frames = Paths.getSparrowAtlas('MagniillBump');
+				gfDance.animation.addByIndices('danceLeft', 'Magniill Title Bump', 24, false);
+				gfDance.animation.addByIndices('danceRight', 'Magniill Title Bump', 24, false);
 			#end
 
 			default:
@@ -411,6 +419,16 @@ class TitleState extends MusicBeatState
 		ngSpr.updateHitbox();
 		ngSpr.screenCenter(X);
 		ngSpr.antialiasing = ClientPrefs.globalAntialiasing;
+
+		erectSpr = new FlxSprite(0, FlxG.height * 0.52).loadGraphic(Paths.image('erect_team'));
+		add(erectSpr);
+		erectSpr.visible = false;
+		erectSpr.scale.x = 0.3;
+		erectSpr.scale.y = 0.3;
+		erectSpr.y += -96;
+		erectSpr.updateHitbox();
+		erectSpr.screenCenter(X);
+		erectSpr.antialiasing = true;
 
 		FlxTween.tween(credTextShit, {y: credTextShit.y + 20}, 2.9, {ease: FlxEase.quadInOut, type: PINGPONG});
 
@@ -640,22 +658,22 @@ class TitleState extends MusicBeatState
 					//FlxG.sound.music.stop();
 					FlxG.sound.playMusic(Paths.music('freakyMenu'), 0);
 					FlxG.sound.music.fadeIn(4, 0, 0.7);
-					createCoolText(['OS Engine by'], 45);
+					createCoolText(['Team Magniill'], 45);
 				case 2:
-					addMoreText('weuz_', 45);
-					addMoreText('nelifs', 45);
-					addMoreText('Cooljer', 45);
+					addMoreText('present', 45);
+					erectSpr.visible = true;
 				case 3:
 					deleteCoolText();
+					erectSpr.visible = false;
 					createCoolText(['Forked', 'from'], 15);
 				case 4:
-					addMoreText('Psych Engine', 45);
+					addMoreText('OS Engine', 45);
 				case 6:
 					deleteCoolText();
-					createCoolText(['Psych Engine by'], 45);
-					addMoreText('Shadow Mario',45);
-					addMoreText('RiverOaken',45);
-					addMoreText('bbpanzu',45);
+					createCoolText(['OS Engine by'], 45);
+					addMoreText('wuez_',45);
+					addMoreText('nelifs',45);
+					addMoreText('Cooljer',45);
 				case 8:
 					deleteCoolText();
 					createCoolText([curWacky[0]]);
@@ -664,15 +682,17 @@ class TitleState extends MusicBeatState
 				case 12:
 					deleteCoolText();
 				case 13:
-					addMoreText('Friday');
+					addMoreText('FNF');
 				// credTextShit.visible = true;
 				case 14:
-					addMoreText('Night');
+					addMoreText('Erect');
 				// credTextShit.text += '\nNight';
 				case 15:
-					addMoreText('Funkin'); // credTextShit.text += '\nFunkin';
-
+					addMoreText('Engine'); // credTextShit.text += '\nFunkin';
 				case 16:
+					addMoreText('Beta 1');
+
+				case 17:
 					skipIntro();
 			}
 		}
@@ -701,6 +721,8 @@ class TitleState extends MusicBeatState
 						FlxG.sound.play(Paths.sound('JingleShadow'));
 					case 'BBPANZU':
 						sound = FlxG.sound.play(Paths.sound('JingleBB'));
+					case 'MAGNIILL':
+						sound = FlxG.sound.play(Paths.sound('JingleMagniill'));
 
 					default: //Go back to normal ugly ass boring GF
 						remove(ngSpr);
@@ -757,6 +779,18 @@ class TitleState extends MusicBeatState
 					}
 				}
 				#end
+
+				FlxTween.tween(logoBl, {y: -100}, 1.4, {ease: FlxEase.expoInOut});
+
+				logoBl.angle = -4;
+	
+				new FlxTimer().start(0.01, function(tmr:FlxTimer)
+				{
+					if (logoBl.angle == -4)
+						FlxTween.angle(logoBl, logoBl.angle, 4, 4, {ease: FlxEase.quartInOut});
+					if (logoBl.angle == 4)
+						FlxTween.angle(logoBl, logoBl.angle, -4, 4, {ease: FlxEase.quartInOut});
+				}, 0);
 			}
 			skippedIntro = true;
 		}
