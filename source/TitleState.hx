@@ -690,7 +690,7 @@ class TitleState extends MusicBeatState
 				case 15:
 					addMoreText('Engine'); // credTextShit.text += '\nFunkin';
 				case 16:
-					addMoreText('Beta 1');
+					addMoreText('Version 1.2.2'); // much better
 
 				case 17:
 					skipIntro();
