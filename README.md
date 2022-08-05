@@ -20,6 +20,9 @@ If you want video support on your mod, simply do `haxelib install hxCodec` on a 
 * [BruhDaDumbass](https://twitter.com/bruh_thedumbass) - Additional Programmer
 * [HeartinaRosebud](https://twitter.com/HeartinaRosebud) - Main Artist/Main Animator
 
+### Erect Engine Special Thanks
+* [NotDreepyMV](https://www.youtube.com/channel/UCi32t97MCZr585ItbmlzCZA) - Playtester
+
 ## OS Engine Credits:
 * [weuz_](https://github.com/notweuz) - Coding
 * [nelifs](https://github.com/nelifs) - Coding and Design
