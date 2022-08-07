@@ -2,6 +2,9 @@
 # Friday Night Funkin' - Erect Engine - Modded OS Engine
 ![](https://img.shields.io/github/license/Magniill/FNF-ErectEngine) ![GitHub all releases](https://img.shields.io/github/downloads/Magniill/FNF-ErectEngine/total)
 
+## VERY IMPORTANT NOTE IF YOU ARE MODDING WITH THIS ENGINE
+You **MUST** upload your mod's source code, or we will find the mod and talk about it, trust me, you don't want it to happen.
+
 ## Installation:
 You must have [the most up-to-date version of Haxe](https://haxe.org/download/), seriously, stop using 4.1.5, it misses some stuff.
 
