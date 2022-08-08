@@ -178,7 +178,7 @@ class VisualsUISubState extends BaseOptionsMenu
 			'noteSkinSettings',
 			'string',
 			'Classic',
-			['Classic', 'Circle', 'Dumb']); // code is here lol
+			['Classic', 'Circle']); // code is here lol //sadly i had to remove it because i had no idea what was i doing
 		addOption(option);
 		
 		var option:Option = new Option('Pause Screen Song:',
