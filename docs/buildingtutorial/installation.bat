@@ -58,8 +58,8 @@ title FNF Setup - User action required
 set /p menu="Would you like to fix the transition bug? [Y/N]"
        if %menu%==Y goto FixTransitionBug
        if %menu%==y goto FixTransitionBug
-       if %menu%==N goto UserActions2
-       if %menu%==n goto UserActions2
+       if %menu%==N goto APIStuffNo
+       if %menu%==n goto APIStuffNo
        cls
 
 
@@ -84,7 +84,7 @@ exit
 :FixTransitionBug
 title FNF Setup - Installing libraries
 haxelib git flixel-addons https://github.com/HaxeFlixel/flixel-addons
-goto UserActions2
+goto APIStuffNo
 
 :InstallVSCommunity
 title FNF Setup - Installing Visual Studio Community
