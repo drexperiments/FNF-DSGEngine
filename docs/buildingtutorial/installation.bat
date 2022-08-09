@@ -40,6 +40,16 @@ pause >nul
 title FNF Setup - Installing libraries
 haxelib git hxvm-luajit https://github.com/nebulazorua/hxvm-luajit
 cls
+echo Press any key to install actuate
+pause >nul
+title FNF Setup - Installing libraries
+haxelib install actuate
+cls
+echo Press any key to install extension-webm
+pause >nul
+title FNF Setup - Installing libraries
+haxelib git extension-webm https://github.com/GrowtopiaFli/extension-webm
+cls
 
 goto UserActions1
 
