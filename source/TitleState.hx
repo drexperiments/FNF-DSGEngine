@@ -12,6 +12,7 @@ import flixel.addons.display.FlxGridOverlay;
 import flixel.addons.transition.FlxTransitionSprite.GraphicTransTileDiamond;
 import flixel.addons.transition.FlxTransitionableState;
 import flixel.addons.transition.TransitionData;
+import flixel.graphics.FlxGraphic;
 import haxe.Json;
 import openfl.display.Bitmap;
 import openfl.display.BitmapData;
@@ -66,6 +67,7 @@ class TitleState extends MusicBeatState
 	var textGroup:FlxGroup;
 	var ngSpr:FlxSprite;
 	var erectSpr:FlxSprite;
+	var logoSpr:FlxSprite;
 	
 	var titleTextColors:Array<FlxColor> = [0xFF33FFFF, 0xFF3333CC];
 	var titleTextAlphas:Array<Float> = [1, .64];
@@ -241,17 +243,17 @@ class TitleState extends MusicBeatState
 	{
 		if (!initialized)
 		{
-			/*var diamond:FlxGraphic = FlxGraphic.fromClass(GraphicTransTileDiamond);
+			var diamond:FlxGraphic = FlxGraphic.fromClass(GraphicTransTileDiamond);
 			diamond.persist = true;
 			diamond.destroyOnNoUse = false;
 
 			FlxTransitionableState.defaultTransIn = new TransitionData(FADE, FlxColor.BLACK, 1, new FlxPoint(0, -1), {asset: diamond, width: 32, height: 32},
-				new FlxRect(-300, -300, FlxG.width * 1.8, FlxG.height * 1.8));
+				new FlxRect(-200, -200, FlxG.width * 1.4, FlxG.height * 1.4));
 			FlxTransitionableState.defaultTransOut = new TransitionData(FADE, FlxColor.BLACK, 0.7, new FlxPoint(0, 1),
-				{asset: diamond, width: 32, height: 32}, new FlxRect(-300, -300, FlxG.width * 1.8, FlxG.height * 1.8));
+				{asset: diamond, width: 32, height: 32}, new FlxRect(-200, -200, FlxG.width * 1.4, FlxG.height * 1.4));
 
 			transIn = FlxTransitionableState.defaultTransIn;
-			transOut = FlxTransitionableState.defaultTransOut;*/
+			transOut = FlxTransitionableState.defaultTransOut;
 
 			// HAD TO MODIFY SOME BACKEND SHIT
 			// IF THIS PR IS HERE IF ITS ACCEPTED UR GOOD TO GO
@@ -429,6 +431,16 @@ class TitleState extends MusicBeatState
 		erectSpr.updateHitbox();
 		erectSpr.screenCenter(X);
 		erectSpr.antialiasing = true;
+
+		logoSpr = new FlxSprite(0, FlxG.height * 0.52).loadGraphic(Paths.image('titlelogo'));
+		add(logoSpr);
+		logoSpr.visible = false;
+		logoSpr.scale.x = 0.3;
+		logoSpr.scale.y = 0.3;
+		logoSpr.y += -96;
+		logoSpr.updateHitbox();
+		logoSpr.screenCenter(X);
+		logoSpr.antialiasing = true;
 
 		FlxTween.tween(credTextShit, {y: credTextShit.y + 20}, 2.9, {ease: FlxEase.quadInOut, type: PINGPONG});
 
@@ -658,19 +670,21 @@ class TitleState extends MusicBeatState
 					//FlxG.sound.music.stop();
 					FlxG.sound.playMusic(Paths.music('freakyMenu'), 0);
 					FlxG.sound.music.fadeIn(4, 0, 0.7);
-					createCoolText(['Team Magniill'], 45);
+					createCoolText(['Team Magniill'], 15);
 				case 2:
-					addMoreText('present', 45);
+					addMoreText('present', 35);
 					erectSpr.visible = true;
 				case 3:
 					deleteCoolText();
 					erectSpr.visible = false;
-					createCoolText(['Forked', 'from'], 15);
+					createCoolText(['a modification of'], 15);
 				case 4:
-					addMoreText('OS Engine', 45);
+					addMoreText('this thing below you lol', 45);
+					logoSpr.visible = true;
 				case 6:
 					deleteCoolText();
-					createCoolText(['OS Engine by'], 45);
+					logoSpr.visible = false;
+					createCoolText(['Forked from OS Engine by'], 45);
 					addMoreText('wuez_',45);
 					addMoreText('nelifs',45);
 					addMoreText('Cooljer',45);
@@ -682,15 +696,15 @@ class TitleState extends MusicBeatState
 				case 12:
 					deleteCoolText();
 				case 13:
-					addMoreText('FNF');
+					addMoreText('Friday');
 				// credTextShit.visible = true;
 				case 14:
-					addMoreText('Erect');
+					addMoreText('Night');
 				// credTextShit.text += '\nNight';
 				case 15:
-					addMoreText('Engine'); // credTextShit.text += '\nFunkin';
+					addMoreText('Funkin'); // credTextShit.text += '\nFunkin';
 				case 16:
-					addMoreText('Version 1.2.2'); // much better
+					addMoreText('Erect Engine'); //credTextShit.text +- '\nFUCKYOUIFYOURESTOREDTHISCODE';
 
 				case 17:
 					skipIntro();

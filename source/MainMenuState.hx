@@ -18,11 +18,11 @@ import flixel.tweens.FlxTween;
 import flixel.util.FlxColor;
 import ColorblindFilters;
 #if MODS_ALLOWED
-import sys.FileSystem;
+import sys.FileSystem; // i fuck these
 import sys.io.File;
 #end
 import lime.app.Application;
-import Achievements;
+import Achievements; //i hate this
 import editors.MasterEditorMenu;
 import flixel.input.keyboard.FlxKey;
 
@@ -30,10 +30,11 @@ using StringTools;
 
 class MainMenuState extends MusicBeatState
 {
-	public static var erectEngineVersion:String = '1.2.1'; //used for the discord rpc
+	public static var erectEngineVersion:String = '1.2.2'; //used for the discord rpc
 	public static var osEngineVersion:String = '1.5.1'; //used for the main menu only
 	public static var psychEngineVersion:String = '0.6.2'; //used for psych engine version
 	public static var haxeflixelVersion:String = '4.11.0'; //used for haxeflixel haha
+	public static var kadeEngineVersion:String = '1.8'; //kade version
 	public static var curSelected:Int = 0;
 
 	var menuItems:FlxTypedGroup<FlxSprite>;
@@ -47,6 +48,9 @@ class MainMenuState extends MusicBeatState
 		#if ACHIEVEMENTS_ALLOWED 'awards', #end
 		'credits',
 		'donate',
+		//'os_old', DONT ENABLE, OLD ONE
+		'os', //os engine thing
+		'psych', //psych engine thing
 		//'discord', you can go to discord now by pressing ctrl in credits
 		'options'
 	];
@@ -171,19 +175,23 @@ class MainMenuState extends MusicBeatState
 
 		FlxG.camera.follow(camFollowPos, null, 1);
 
-		var versionShit:FlxText = new FlxText(FlxG.width * 0.7, FlxG.height - 104, 0, "Erect Engine v" + erectEngineVersion + " - Modded OS Engine", 12);
+		var versionShit:FlxText = new FlxText(FlxG.width * 0.7, FlxG.height - 124, 0, "Erect Engine v" + erectEngineVersion + " - Modded OS Engine", 12);
 		versionShit.scrollFactor.set();
 		versionShit.setFormat("VCR OSD Mono", 16, FlxColor.WHITE, LEFT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
 		add(versionShit);
-		var versionShit:FlxText = new FlxText(FlxG.width * 0.7, FlxG.height - 84, 0, "Built with OS Engine v" + osEngineVersion, 12);
+		var versionShit:FlxText = new FlxText(FlxG.width * 0.7, FlxG.height - 104, 0, "Built with OS Engine v" + osEngineVersion, 12);
 		versionShit.scrollFactor.set();
 		versionShit.setFormat("VCR OSD Mono", 16, FlxColor.WHITE, LEFT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
 		add(versionShit);
-		var versionShit:FlxText = new FlxText(FlxG.width * 0.7, FlxG.height - 64, 0, "OS Engine Built with Psych Engine v" + psychEngineVersion, 12);
+		var versionShit:FlxText = new FlxText(FlxG.width * 0.7, FlxG.height - 84, 0, "OS Engine Built with Psych Engine v" + psychEngineVersion, 12);
 		versionShit.scrollFactor.set();
 		versionShit.setFormat("VCR OSD Mono", 16, FlxColor.WHITE, LEFT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
 		add(versionShit);
-		var versionShit:FlxText = new FlxText(FlxG.width * 0.7, FlxG.height - 44, 0, "Haxeflixel v" + haxeflixelVersion, 12);
+		var versionShit:FlxText = new FlxText(FlxG.width * 0.7, FlxG.height - 64, 0, "Haxeflixel v" + haxeflixelVersion, 12);
+		versionShit.scrollFactor.set();
+		versionShit.setFormat("VCR OSD Mono", 16, FlxColor.WHITE, LEFT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
+		add(versionShit);
+		var versionShit:FlxText = new FlxText(FlxG.width * 0.7, FlxG.height - 44, 0, "Used Kade Engine Source Code v" + kadeEngineVersion, 12);
 		versionShit.scrollFactor.set();
 		versionShit.setFormat("VCR OSD Mono", 16, FlxColor.WHITE, LEFT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
 		add(versionShit);
@@ -286,6 +294,10 @@ class MainMenuState extends MusicBeatState
 			{
 				if (optionShit[curSelected] == 'donate') {
 					CoolUtil.browserLoad('https://ninja-muffin24.itch.io/funkin');
+				} else if (optionShit[curSelected] == 'os') {
+					CoolUtil.browserLoad('https://gamebanana.com/mods/374157');
+				} else if (optionShit[curSelected] == 'psych') {
+					CoolUtil.browserLoad('https://gamebanana.com/mods/309789');
 				} else if (optionShit[curSelected] == customOption) {
 					CoolUtil.browserLoad(customOptionLink);
 				}
@@ -352,7 +364,7 @@ class MainMenuState extends MusicBeatState
 										MusicBeatState.switchState(new FreeplayState());
 									#if MODS_ALLOWED
 									case 'mods':
-										MusicBeatState.switchState(new ModsMenuState()); 
+										MusicBeatState.switchState(new ModsMenuState()); //why does this even have to exist
 									#end
 									case 'awards':
 										MusicBeatState.switchState(new AchievementsMenuState());

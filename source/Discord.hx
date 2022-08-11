@@ -44,7 +44,7 @@ class DiscordClient
 	static function onReady()
 	{
 		DiscordRpc.presence({
-			details: "In the Menus",
+			details: "Starting up...",
 			state: null,
 			largeImageKey: 'icon',
 			largeImageText: "Erect Engine — Modded OS Engine"

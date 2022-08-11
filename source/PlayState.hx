@@ -2476,7 +2476,7 @@ class PlayState extends MusicBeatState
 			+ ' | Misses: ' + songMisses 
 			+ ' | MS Count: ' + Math.round(averageMs) + 'ms'
 			+ ' | Rating: ' + Highscore.floorDecimal(ratingPercent * 100, 2) + '%' 
-			+ ' | ' + ratingName + ' [' + ratingFC + ']';
+			+ ' | ' + ratingName + ' - ' + ratingFC;
 		}
 
 		if(ClientPrefs.scoreZoom && !miss && !cpuControlled)
