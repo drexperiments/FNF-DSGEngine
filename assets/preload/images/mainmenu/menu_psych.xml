@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="menu_psych.png">
+<!-- Generated with Spritesheet XML Generator for Friday Night Funkin' v4.2.5 -->
+<!-- https://gamebanana.com/tools/7136 -->
+    <SubTexture name="psych basic0000" x="562" y="0" width="409" height="115" frameX="0" frameY="-1" frameWidth="423" frameHeight="116" />
+    <SubTexture name="psych basic0001" x="562" y="0" width="409" height="115" frameX="0" frameY="-1" frameWidth="423" frameHeight="116" />
+    <SubTexture name="psych basic0002" x="562" y="0" width="409" height="115" frameX="0" frameY="-1" frameWidth="423" frameHeight="116" />
+    <SubTexture name="psych basic0003" x="562" y="115" width="409" height="115" frameX="0" frameY="-1" frameWidth="423" frameHeight="116" />
+    <SubTexture name="psych basic0004" x="562" y="115" width="409" height="115" frameX="0" frameY="-1" frameWidth="423" frameHeight="116" />
+    <SubTexture name="psych basic0005" x="562" y="115" width="409" height="115" frameX="0" frameY="-1" frameWidth="423" frameHeight="116" />
+    <SubTexture name="psych basic0006" x="562" y="230" width="409" height="115" frameX="0" frameY="-1" frameWidth="423" frameHeight="116" />
+    <SubTexture name="psych basic0007" x="562" y="230" width="409" height="115" frameX="0" frameY="-1" frameWidth="423" frameHeight="116" />
+    <SubTexture name="psych basic0008" x="562" y="230" width="409" height="115" frameX="0" frameY="-1" frameWidth="423" frameHeight="116" />
+    <SubTexture name="psych white0000" x="0" y="348" width="561" height="173" frameX="0" frameY="0" frameWidth="562" frameHeight="174" />
+    <SubTexture name="psych white0001" x="0" y="0" width="562" height="174" frameX="0" frameY="0" frameWidth="562" frameHeight="174" />
+    <SubTexture name="psych white0002" x="0" y="174" width="562" height="174" frameX="0" frameY="0" frameWidth="562" frameHeight="174" />
+</TextureAtlas>

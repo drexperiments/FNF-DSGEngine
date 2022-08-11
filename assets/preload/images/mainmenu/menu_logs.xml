@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="menu_logs.png">
+<SubTexture name="logs basic0000" x="399" y="188" width="353" height="139" frameX="0" frameY="0" frameWidth="355" frameHeight="140" />
+<SubTexture name="logs basic0001" x="399" y="188" width="353" height="139" frameX="0" frameY="0" frameWidth="355" frameHeight="140" />
+<SubTexture name="logs basic0002" x="399" y="188" width="353" height="139" frameX="0" frameY="0" frameWidth="355" frameHeight="140" />
+<SubTexture name="logs basic0003" x="0" y="384" width="353" height="139" frameX="0" frameY="0" frameWidth="355" frameHeight="140" />
+<SubTexture name="logs basic0004" x="0" y="384" width="353" height="139" frameX="0" frameY="0" frameWidth="355" frameHeight="140" />
+<SubTexture name="logs basic0005" x="0" y="384" width="353" height="139" frameX="0" frameY="0" frameWidth="355" frameHeight="140" />
+<SubTexture name="logs basic0006" x="353" y="384" width="353" height="139" frameX="0" frameY="0" frameWidth="355" frameHeight="140" />
+<SubTexture name="logs basic0007" x="353" y="384" width="353" height="139" frameX="0" frameY="0" frameWidth="355" frameHeight="140" />
+<SubTexture name="logs basic0008" x="353" y="384" width="353" height="139" frameX="0" frameY="0" frameWidth="355" frameHeight="140" />
+<SubTexture name="logs white0000" x="399" y="0" width="397" height="188" frameX="-4" frameY="-1" frameWidth="401" frameHeight="193" />
+<SubTexture name="logs white0001" x="0" y="193" width="396" height="191" frameX="-3" frameY="0" frameWidth="401" frameHeight="193" />
+<SubTexture name="logs white0002" x="0" y="0" width="399" height="193" frameX="-2" frameY="0" frameWidth="401" frameHeight="193" />
+</TextureAtlas>
