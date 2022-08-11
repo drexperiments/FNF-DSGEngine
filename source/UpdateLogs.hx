@@ -21,7 +21,7 @@ import sys.FileSystem;
 import sys.io.File;
 #end
 
-class CreditsState extends MusicBeatState
+class UpdateLogs extends MusicBeatState
 {
 	var curSelected:Int = -1;
 
@@ -41,7 +41,7 @@ class CreditsState extends MusicBeatState
 	{
 		#if desktop
 		// Updating Discord Rich Presence
-		DiscordClient.changePresence("In the Credits", null);
+		DiscordClient.changePresence("Viewing the logs", null);
 		#end
 
 		persistentUpdate = true;
@@ -85,13 +85,14 @@ class CreditsState extends MusicBeatState
 		}
 		#end
 
-		var pisspoop:Array<Array<String>> = [ //Name - Icon name - Description - Link - BG Color // too much code, help
+		var pisspoop:Array<Array<String>> = [ //ok ill explain in a credit thing
 			['Release 1.2.2'],
 			['- Added Logs',			'gud',		' ',						'https://github.com/Magniill/FNF-ErectEngine',	'FFFFFF'],
             ['- changes to the title screen', 'gud',      ' ',                        'https://github.com/Magniill/FNF-ErectEngine',  'FFFFFF'],
             ['- Added new main menu stuff', 'gud',	' ',						'https://github.com/Magniill/FNF-ErectEngine',	'FFFFFF'],
 			['- .WEBM Support',			'gud',		' ',						'https://github.com/Magniill/FNF-ErectEngine',	'FFFFFF'],
-			['- BF Icons changed',		'gud',		' ',						'https://github.com/Magniill/FNF-ErectEngine',	'FFFFFF'],
+			['- Most icons changed',		'gud',		' ',						'https://github.com/Magniill/FNF-ErectEngine',	'FFFFFF'],
+			['- New Icon to replace face',	'gud',		' ',					'https://github.com/Magniill/FNF-ErectEngine',		'FFFFFF'],
 			[''],
 			['Release 1.2.1'],
 			['- Github Page',			'gud',		' ',						'https://github.com/Magniill/FNF-ErectEngine',	'FFFFFF'],

@@ -51,6 +51,7 @@ class MainMenuState extends MusicBeatState
 		//'os_old', DONT ENABLE, OLD ONE
 		'os', //os engine thing
 		'psych', //psych engine thing
+		'logs', //logs
 		//'discord', you can go to discord now by pressing ctrl in credits
 		'options'
 	];
@@ -372,6 +373,8 @@ class MainMenuState extends MusicBeatState
 										MusicBeatState.switchState(new CreditsState());
 									case 'options':
 										LoadingState.loadAndSwitchState(new options.OptionsState());
+									case 'logs':
+										MusicBeatState.switchState(new UpdateLogs());
 								}
 							});
 						}
