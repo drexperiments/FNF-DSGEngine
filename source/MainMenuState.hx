@@ -30,7 +30,7 @@ using StringTools;
 
 class MainMenuState extends MusicBeatState
 {
-	public static var erectEngineVersion:String = '1.2.2'; //used for the discord rpc
+	public static var erectEngineVersion:String = '2.0.1'; //used for the discord rpc
 	public static var osEngineVersion:String = '1.5.1'; //used for the main menu only
 	public static var psychEngineVersion:String = '0.6.2'; //used for psych engine version
 	public static var haxeflixelVersion:String = '4.11.0'; //used for haxeflixel haha

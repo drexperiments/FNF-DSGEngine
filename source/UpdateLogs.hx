@@ -85,7 +85,7 @@ class UpdateLogs extends MusicBeatState
 		}
 		#end
 
-		var pisspoop:Array<Array<String>> = [ //ok ill explain in a credit thing
+		var pisspoop:Array<Array<String>> = [ //read the wiki
 			['Release 1.2.2'],
 			['- Added Logs',			'gud',		' ',						'https://github.com/Magniill/FNF-ErectEngine',	'FFFFFF'],
             ['- changes to the title screen', 'gud',      ' ',                        'https://github.com/Magniill/FNF-ErectEngine',  'FFFFFF'],
