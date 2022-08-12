@@ -1,0 +1,32 @@
+{
+	"songs": [
+		[
+			"programmer magniill",
+			"bf-pixel",
+			[
+				123,
+				214,
+				246
+			]
+		]
+	],
+	"hiddenUntilUnlocked": true,
+	"hideFreeplay": true,
+	"weekBackground": "awesome",
+	"difficulties": "",
+	"weekCharacters": [
+		"",
+		"",
+		""
+	],
+	"storyName": "xd >:)",
+	"weekName": "darnit",
+	"freeplayColor": [
+		146,
+		113,
+		253
+	],
+	"hideStoryMode": false,
+	"weekBefore": "week7",
+	"startUnlocked": true
+}
