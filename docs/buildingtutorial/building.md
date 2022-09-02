@@ -13,13 +13,7 @@
 	 - Install from the [git-scm](https://git-scm.com/downloads) website.
  4. Run the [installation batch file](installation.bat) to install all of the commands, it should work properly.
 
-### Windows-only dependencies (only for building *to* Windows. Building html5 on Windows does not require this)
-If you are planning to build for Windows, you also need to install **Visual Studio 2019**. While installing it, *don't click on any of the options to install workloads*. Instead, go to the **individual components** tab and choose the following:
-
--   MSVC v142 - VS 2019 C++ x64/x86 build tools
--   Windows SDK (10.0.17763.0)
-
-This will install about 4 GB of crap, but is necessary to build for Windows.
+It will automatically install Visual Studio 2019. This will install about 4 GB of crap, but is necessary to build for Windows.
 
 ## Building
 Finally, we are ready to build.
