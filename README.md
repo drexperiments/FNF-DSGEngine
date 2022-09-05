@@ -2,6 +2,9 @@
 # Friday Night Funkin' - Erect Engine - Modded OS Engine
 ![](https://img.shields.io/github/issues/Magniill/FNF-ErectEngine) ![](https://img.shields.io/github/forks/Magniill/FNF-ErectEngine) ![](https://img.shields.io/github/stars/Magniill/FNF-ErectEngine) ![](https://img.shields.io/github/license/Magniill/FNF-ErectEngine) ![GitHub all releases](https://img.shields.io/github/downloads/Magniill/FNF-ErectEngine/total) ![GitHub repo size](https://img.shields.io/github/repo-size/Magniill/FNF-ErectEngine) ![](https://img.shields.io/github/contributors/Magniill/FNF-ErectEngine) ![GitHub release (latest by date)](https://img.shields.io/github/downloads/Magniill/FNF-ErectEngine/latest/total)
 
+## Note
+OS Engine is dead, so this will be an independent one.
+
 
 ## VERY IMPORTANT NOTE IF YOU ARE MODDING WITH THIS ENGINE
 You **MUST** upload your mod's source code, or we will find the mod and talk about it, trust me, you don't want it to happen.
