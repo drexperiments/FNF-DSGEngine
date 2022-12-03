@@ -1,5 +1,4 @@
-![](erectenginelogo.png)
-# Friday Night Funkin' - Erect Engine - Modded OS Engine
+# Friday Night Funkin' - Magnified Engine
 ![](https://img.shields.io/github/issues/Magniill/FNF-ErectEngine) ![](https://img.shields.io/github/forks/Magniill/FNF-ErectEngine) ![](https://img.shields.io/github/stars/Magniill/FNF-ErectEngine) ![](https://img.shields.io/github/license/Magniill/FNF-ErectEngine) ![GitHub all releases](https://img.shields.io/github/downloads/Magniill/FNF-ErectEngine/total) ![GitHub repo size](https://img.shields.io/github/repo-size/Magniill/FNF-ErectEngine) ![](https://img.shields.io/github/contributors/Magniill/FNF-ErectEngine) ![GitHub release (latest by date)](https://img.shields.io/github/downloads/Magniill/FNF-ErectEngine/latest/total)
 
 ## Note
@@ -22,18 +21,13 @@ If you get an error about StatePointer when using Lua, run `haxelib remove linc_
 
 If you want video support on your mod, simply do `haxelib install hxCodec` on a Command prompt/PowerShell
 
-## Erect Engine Credits
+## Magnified Engine Credits
 * [NotMagniill](https://twitter.com/magniill) - Main Programmer/Artist
 * [BruhDaDumbass](https://twitter.com/bruh_thedumbass) - Additional Programmer
 * [HeartinaRosebud](https://twitter.com/HeartinaRosebud) - Main Artist/Main Animator
 
-### Erect Engine Special Thanks
+### Magnified Engine Special Thanks
 * [NotDreepyMV](https://www.youtube.com/channel/UCi32t97MCZr585ItbmlzCZA) - Playtester
-
-## OS Engine Credits:
-* [weuz_](https://github.com/notweuz) - Coding
-* [nelifs](https://github.com/nelifs) - Coding and Design
-* [Cooljer](https://github.com/cooljer) - Arts
 
 ### OS Engine Special Thanks
 * [jonnycat](https://github.com/McJonnycat) - Fixing bugs in Engine <3.
@@ -60,9 +54,34 @@ _____________________________________
 
 ## Psych Engine Features
 
-OS Engine is a fork of Psych Engine, so you can use almost every feature from Psych Engine in OS Engine!
+too lazy to write
 
-## OS Engine Features
+## Magnified Engine Features
+
+### Extra Keys Events
+You can enable while charting, then start the song
+
+![](updates/extrakeys.png)
+
+### VCR Shader on Thorns
+Perfection
+
+![](updates/shaderonthorns.jpg)
+
+### Now Playing Thing
+I think it's useless because there is a song watermark BELOW but whatever.
+
+![](updates/nowplaying.png)
+
+### Tilting Logo In The Title Screen
+Kade Engine vibes?
+
+![](updates/thelogothatsalwaysmoving.png)
+
+### A bunch of version text
+No words, just shit
+
+![](updates/abunchoftext.png)
 
 ### Psych Engine mods compability
 Yes, almost every mod for Psych Engine runs on OS Engine.
@@ -127,32 +146,3 @@ Bit changed Title State. Now it looks way more better.
 Cassette Girl vibes?
 
 ![](https://media.discordapp.net/attachments/969211146412363828/969218236950397038/unknown.png)
-
-- - -
-
-## Erect Engine Features
-
-### Extra Keys Events
-You can enable while charting, then start the song
-
-![](updates/extrakeys.png)
-
-### VCR Shader on Thorns
-Perfection
-
-![](updates/shaderonthorns.jpg)
-
-### Now Playing Thing
-I think it's useless because there is a song watermark BELOW but whatever.
-
-![](updates/nowplaying.png)
-
-### Tilting Logo In The Title Screen
-Kade Engine vibes?
-
-![](updates/thelogothatsalwaysmoving.png)
-
-### A bunch of version text
-No words, just shit
-
-![](updates/abunchoftext.png)
