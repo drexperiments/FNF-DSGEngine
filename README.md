@@ -1,12 +1,12 @@
-# Friday Night Funkin' - Magnified Engine
+# Friday Night Funkin' - DSG Engine
 ![](https://img.shields.io/github/issues/Magniill/FNF-ErectEngine) ![](https://img.shields.io/github/forks/Magniill/FNF-ErectEngine) ![](https://img.shields.io/github/stars/Magniill/FNF-ErectEngine) ![](https://img.shields.io/github/license/Magniill/FNF-ErectEngine) ![GitHub all releases](https://img.shields.io/github/downloads/Magniill/FNF-ErectEngine/total) ![GitHub repo size](https://img.shields.io/github/repo-size/Magniill/FNF-ErectEngine) ![](https://img.shields.io/github/contributors/Magniill/FNF-ErectEngine) ![GitHub release (latest by date)](https://img.shields.io/github/downloads/Magniill/FNF-ErectEngine/latest/total)
 
 ## Note
 OS Engine is dead, so this will be an independent one.
 
 
-## VERY IMPORTANT NOTE IF YOU ARE MODDING WITH THIS ENGINE
-You **MUST** upload your mod's source code, or we will find the mod and talk about it, trust me, you don't want it to happen.
+"## VERY IMPORTANT NOTE IF YOU ARE MODDING WITH THIS ENGINE
+You **MUST** upload your mod's source code, or we will find the mod and talk about it, trust me, you don't want it to happen." idc
 
 ## Installation:
 You must have [the most up-to-date version of Haxe](https://haxe.org/download/), seriously, stop using 4.1.5, it misses some stuff.
@@ -20,7 +20,8 @@ To install LuaJIT do this: `haxelib git linc_luajit https://github.com/nebulazor
 If you get an error about StatePointer when using Lua, run `haxelib remove linc_luajit` into Command Prompt/PowerShell, then re-install linc_luajit.
 
 If you want video support on your mod, simply do `haxelib install hxCodec` on a Command prompt/PowerShell
-
+## DSG Engine Credits
+*[philip] - Main Programmer
 ## Magnified Engine Credits
 * [NotMagniill](https://twitter.com/magniill) - Main Programmer/Artist
 * [BruhDaDumbass](https://twitter.com/bruh_thedumbass) - Additional Programmer
