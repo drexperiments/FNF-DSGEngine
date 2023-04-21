@@ -30,7 +30,8 @@ using StringTools;
 
 class MainMenuState extends MusicBeatState
 {
-	public static var erectEngineVersion:String = '2.0.1'; //used for the discord rpc
+	public static var DSGEngineVersion:String = '1.5.2';
+	public static var MagnifiedEngineVersion:String = '2.0.1'; //used for the discord rpc
 	public static var osEngineVersion:String = '1.5.1'; //used for the main menu only
 	public static var psychEngineVersion:String = '0.6.2'; //used for psych engine version
 	public static var haxeflixelVersion:String = '4.11.0'; //used for haxeflixel haha
@@ -176,7 +177,7 @@ class MainMenuState extends MusicBeatState
 
 		FlxG.camera.follow(camFollowPos, null, 1);
 
-		var versionShit:FlxText = new FlxText(FlxG.width * 0.7, FlxG.height - 124, 0, "Erect Engine v" + erectEngineVersion + " - Modded OS Engine", 12);
+		var versionShit:FlxText = new FlxText(FlxG.width * 0.7, FlxG.height - 124, 0, "Erect Engine v" + MagnifiedEngineVersion + " - Modded OS Engine", 12);
 		versionShit.scrollFactor.set();
 		versionShit.setFormat("VCR OSD Mono", 16, FlxColor.WHITE, LEFT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
 		add(versionShit);

@@ -85,16 +85,16 @@ class PlayState extends MusicBeatState
 	public static var cameramovingoffsetbf = 20; // idk why i made literally same variable
 
 	public static var ratingStuff:Array<Dynamic> = [
-		['Go F*** Yourself', 0.2], //From 0% to 19%
-		['Do better IDIOT!', 0.4], //From 20% to 39%
-		['Noob', 0.5], //From 40% to 49%
-		['Meh', 0.6], //From 50% to 59%
-		['Bruh', 0.69], //From 60% to 68%
-		['Closer a little bit!', 0.7], //69%
-		['Good', 0.8], //From 70% to 79%
-		['You got the skills!', 0.9], //From 80% to 89%
-		['Sick man!', 1], //From 90% to 99%
-		['Funk-tastic!', 1] //The value on this one isn't used actually, since Perfect is always "1"
+		['F', 0.2], //From 0% to 19%
+		['E', 0.4], //From 20% to 39%
+		['D', 0.5], //From 40% to 49%
+		['C', 0.6], //From 50% to 59%
+		['B', 0.69], //From 60% to 68%
+		['A', 0.7], //69%
+		['S', 0.8], //From 70% to 79%
+		['X', 0.9], //From 80% to 89%
+		['Y', 1], //From 90% to 99%
+		['Z', 1]//The value on this one isn't used actually, since Perfect is always "1"
 	];
 	public static var animatedShaders:Map<String, DynamicShaderHandler> = new Map<String, DynamicShaderHandler>();
 	public var modchartTweens:Map<String, FlxTween> = new Map<String, FlxTween>();
@@ -340,16 +340,16 @@ class PlayState extends MusicBeatState
 		Paths.clearStoredMemory();
 
 		ratingStuff = [
-			['Go F*** Yourself', 0.2], //From 0% to 19%
-			['Do Better IDIOT!', 0.4], //From 20% to 39%
-			['Come On!', 0.5], //From 40% to 49%
-			['Meh', 0.6], //From 50% to 59%
-			['Bruh', 0.69], //From 60% to 68%
-			['Bad', 0.7], //69%
-			['Good', 0.8], //From 70% to 79%
-			['Noice!', 0.9], //From 80% to 89%
-			['Sick Man!!', 1], //From 90% to 99%
-			['FUNK-TASTIC!!!!', 1] //The value on this one isn't used actually, since Perfect is always "1"
+		['F', 0.2], //From 0% to 19%
+		['E', 0.4], //From 20% to 39%
+		['D', 0.5], //From 40% to 49%
+		['C', 0.6], //From 50% to 59%
+		['B', 0.69], //From 60% to 68%
+		['A', 0.7], //69%
+		['S', 0.8], //From 70% to 79%
+		['X', 0.9], //From 80% to 89%
+		['Y', 1], //From 90% to 99%
+		['Z', 1] //The value on this one isn't used actually, since Perfect is always "1"
 		];
 
 		// for lua
@@ -1309,7 +1309,7 @@ class PlayState extends MusicBeatState
 			songTxt.visible = false;
 		}
 		add(songTxt);
-		songTxt.text = curSong + " (" + storyDifficultyText + ") " + "| Erect Engine " + MainMenuState.erectEngineVersion;
+		songTxt.text = curSong + " (" + storyDifficultyText + ") " + "| DSG Engine " + MainMenuState.DSGEngineVersion;
 
 		botplayTxt = new FlxText(400, timeBarBG.y + 55, FlxG.width - 800, "cheater >:(", 32);
 		botplayTxt.setFormat(Paths.font("vcr.ttf"), 32, FlxColor.WHITE, CENTER, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
@@ -2468,13 +2468,15 @@ class PlayState extends MusicBeatState
 	{
 		if(ratingName == '?') {
 			scoreTxt.text = 'Score: ' + songScore 
-			+ ' | Misses ' + songMisses 
+			+ ' | Misses/Combo Breaks: ?' + songMisses 
 			+ ' | MS Count: ?'
+			+ ' | Health: ' + '?' + '%'
 			+ ' | Rating: ' + ratingName;
 		} else {
 			scoreTxt.text = 'Score: ' + songScore 
-			+ ' | Misses: ' + songMisses 
+			+ ' | Misses/Combo Breaks: ' + songMisses 
 			+ ' | MS Count: ' + Math.round(averageMs) + 'ms'
+			+ ' | Health: ' + healthBar.percent + '%'
 			+ ' | Rating: ' + Highscore.floorDecimal(ratingPercent * 100, 2) + '%' 
 			+ ' | ' + ratingName + ' - ' + ratingFC;
 		}
